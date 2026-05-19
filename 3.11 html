@@ -1,0 +1,8 @@
+años = int(input("Años trabajados: "))
+
+if años > 5:
+    bono = 1000
+else:
+    bono = años * 100
+
+print("Bono:", bono)

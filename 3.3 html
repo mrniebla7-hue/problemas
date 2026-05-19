@@ -1,0 +1,12 @@
+dinero = float(input("Dinero disponible: "))
+
+if dinero <= 10:
+    regalo = "Tarjeta"
+elif dinero <= 100:
+    regalo = "Chocolates"
+elif dinero <= 250:
+    regalo = "Flores"
+else:
+    regalo = "Anillo"
+
+print("Regalo recomendado:", regalo)

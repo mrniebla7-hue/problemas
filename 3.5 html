@@ -1,0 +1,22 @@
+nombre1 = input("Nombre 1: ")
+edad1 = int(input("Edad 1: "))
+
+nombre2 = input("Nombre 2: ")
+edad2 = int(input("Edad 2: "))
+
+nombre3 = input("Nombre 3: ")
+edad3 = int(input("Edad 3: "))
+
+menor_nombre = nombre1
+menor_edad = edad1
+
+if edad2 < menor_edad:
+    menor_edad = edad2
+    menor_nombre = nombre2
+
+if edad3 < menor_edad:
+    menor_edad = edad3
+    menor_nombre = nombre3
+
+print("La persona menor es:", menor_nombre)
+print("Edad:", menor_edad)

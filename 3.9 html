@@ -1,0 +1,29 @@
+tipo = input("Tipo de póliza (A/B): ")
+
+if tipo == "A":
+    base = 1200
+else:
+    base = 950
+
+total = base
+
+alcohol = input("¿Bebe alcohol? (si/no): ")
+lentes = input("¿Usa lentes? (si/no): ")
+enfermedad = input("¿Tiene enfermedad? (si/no): ")
+edad = int(input("Edad: "))
+
+if alcohol == "si":
+    total += base * 0.10
+
+if lentes == "si":
+    total += base * 0.05
+
+if enfermedad == "si":
+    total += base * 0.05
+
+if edad > 40:
+    total += base * 0.20
+else:
+    total += base * 0.10
+
+print("Costo total:", total)

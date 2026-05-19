@@ -1,0 +1,15 @@
+precio = float(input("Precio del artículo: "))
+
+if precio >= 200:
+    descuento = precio * 0.15
+
+elif precio > 100:
+    descuento = precio * 0.12
+
+else:
+    descuento = precio * 0.10
+
+total = precio - descuento
+
+print("Descuento:", descuento)
+print("Total a pagar:", total)

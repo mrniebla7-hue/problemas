@@ -1,0 +1,35 @@
+edad = int(input("Edad: "))
+promedio = float(input("Promedio: "))
+
+if edad > 18:
+
+    if promedio >= 9:
+        beca = 2000
+
+    elif promedio >= 7.5:
+        beca = 1000
+
+    elif promedio >= 6:
+        beca = 500
+
+    else:
+        beca = 0
+        print("Carta de invitación")
+
+else:
+
+    if promedio >= 9:
+        beca = 3000
+
+    elif promedio >= 8:
+        beca = 2000
+
+    elif promedio >= 6:
+        beca = 100
+
+    else:
+        beca = 0
+        print("Carta de invitación")
+
+if beca > 0:
+    print("Beca:", beca)

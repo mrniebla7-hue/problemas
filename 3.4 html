@@ -1,0 +1,15 @@
+horas = int(input("Horas en el estacionamiento: "))
+
+if horas <= 2:
+    total = horas * 5
+
+elif horas <= 5:
+    total = (2 * 5) + ((horas - 2) * 4)
+
+elif horas <= 10:
+    total = (2 * 5) + (3 * 4) + ((horas - 5) * 3)
+
+else:
+    total = (2 * 5) + (3 * 4) + (5 * 3) + ((horas - 10) * 2)
+
+print("Total a pagar:", total)

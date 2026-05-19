@@ -1,0 +1,10 @@
+horas = float(input("Horas trabajadas: "))
+pago = float(input("Pago por hora: "))
+
+if horas <= 40:
+    sueldo = horas * pago
+else:
+ extras = horas - 40
+ sueldo = (40 * pago) + (extras * pago * 2)
+
+print("Sueldo semanal:", sueldo) 

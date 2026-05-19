@@ -1,0 +1,18 @@
+alumnos = int(input("Cantidad de alumnos: "))
+
+if alumnos > 100:
+    costo = 20
+
+elif alumnos >= 50:
+    costo = 35
+
+elif alumnos >= 20:
+    costo = 40
+
+else:
+    costo = 70
+
+total = alumnos * costo
+
+print("Costo por alumno:", costo)
+print("Costo total:", total) 

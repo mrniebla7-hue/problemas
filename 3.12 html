@@ -1,0 +1,23 @@
+horas = int(input("Horas trabajadas: "))
+pago = float(input("Pago por hora: "))
+
+if horas <= 40:
+
+    sueldo = horas * pago
+
+elif horas <= 45:
+
+    dobles = horas - 40
+    sueldo = (40 * pago) + (dobles * pago * 2)
+
+elif horas <= 50:
+
+    triples = horas - 45
+    sueldo = (40 * pago) + (5 * pago * 2) + (triples * pago * 3)
+
+else:
+
+    print("No permitido")
+    sueldo = 0
+
+print("Sueldo:", sueldo)

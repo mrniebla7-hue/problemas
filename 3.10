@@ -1,0 +1,23 @@
+
+dinero = float(input("Dinero disponible: "))
+costo_km = float(input("Costo por kilómetro: "))
+
+mexico = 750 * 2 * costo_km
+pv = 800 * 2 * costo_km
+acapulco = 1200 * 2 * costo_km
+cancun = 1800 * 2 * costo_km
+
+if dinero >= cancun:
+    print("Puede ir a Cancún")
+
+elif dinero >= acapulco:
+    print("Puede ir a Acapulco")
+
+elif dinero >= pv:
+    print("Puede ir a Puerto Vallarta")
+
+elif dinero >= mexico:
+    print("Puede ir a México")
+
+else:
+    print("Debe quedarse en casa")

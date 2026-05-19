@@ -1,0 +1,30 @@
+sueldo = float(input("Sueldo: "))
+antiguedad = int(input("Años de antigüedad: "))
+
+# Bono por antigüedad
+if antiguedad > 2 and antiguedad < 5:
+    bono_ant = sueldo * 0.20
+
+elif antiguedad >= 5:
+    bono_ant = sueldo * 0.30
+
+else:
+    bono_ant = 0
+
+# Bono por sueldo
+if sueldo < 1000:
+    bono_sueldo = sueldo * 0.25
+
+elif sueldo <= 3500:
+    bono_sueldo = sueldo * 0.15
+
+else:
+    bono_sueldo = sueldo * 0.10
+
+# Elegir mayor
+if bono_ant > bono_sueldo:
+    bono = bono_ant
+else:
+    bono = bono_sueldo
+
+print("Bono final:", bono)
